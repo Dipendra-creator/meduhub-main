@@ -1,0 +1,44 @@
+{
+  "name": "meduhub",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "cd client && vite",
+    "build": "cd client && vite build",
+    "lint": "cd client && eslint .",
+    "preview": "cd client && vite preview",
+    "backend:dev": "nodemon server.js",
+    "dev:all": "concurrently \"npm run dev\" \"npm run backend:dev\"",
+    "vercel-build": "cd client && npm install && npm run build"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.4.2",
+    "@splinetool/react-spline": "^4.1.0",
+    "@splinetool/runtime": "^1.12.6",
+    "axios": "^1.13.2",
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.22.1",
+    "framer-motion": "^12.23.25",
+    "gsap": "^3.13.0",
+    "mongoose": "^8.0.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "three": "^0.181.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "nodemon": "^3.1.10",
+    "vite": "^7.2.4"
+  }
+}

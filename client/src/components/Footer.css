@@ -1,0 +1,230 @@
+/* ============================================
+   FOOTER STYLES
+   ============================================ */
+
+.footer {
+  position: relative;
+  background: var(--bg-dark-secondary);
+  padding: var(--space-16) 0 var(--space-8);
+  overflow: hidden;
+}
+
+/* CTA Section */
+.footer-cta {
+  text-align: center;
+  padding: var(--space-12);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 102, 204, 0.1) 0%,
+    rgba(0, 188, 212, 0.1) 100%
+  );
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-2xl);
+  margin-bottom: var(--space-16);
+}
+
+.footer-cta h2 {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-4);
+}
+
+.footer-cta > p {
+  font-size: var(--text-lg);
+  color: var(--neutral-300);
+  margin-bottom: var(--space-8);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 480px) {
+  .footer-cta-buttons {
+    flex-direction: row;
+  }
+}
+
+/* Grid */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-10);
+  padding-bottom: var(--space-10);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  }
+}
+
+/* Column */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Brand Column */
+.footer-brand {
+  max-width: 350px;
+}
+
+.footer-logo {
+  height: 50px;
+  width: auto;
+  margin-bottom: var(--space-4);
+}
+
+.footer-description {
+  font-size: var(--text-sm);
+  color: var(--neutral-400);
+  line-height: 1.7;
+  margin-bottom: var(--space-4);
+}
+
+.footer-tagline {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: 700;
+}
+
+/* Column Title */
+.footer-column-title {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: white;
+  margin-bottom: var(--space-4);
+  position: relative;
+}
+
+.footer-column-title::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-400), var(--accent-400));
+  margin-top: var(--space-2);
+  border-radius: var(--radius-full);
+}
+
+/* Links */
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.footer-links a {
+  font-size: var(--text-sm);
+  color: var(--neutral-400);
+  transition: all var(--transition-fast);
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: white;
+  transform: translateX(5px);
+}
+
+/* Contact */
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.footer-contact-item {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+}
+
+.footer-contact-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.footer-contact-item p,
+.footer-contact-item a {
+  font-size: var(--text-sm);
+  color: var(--neutral-400);
+  line-height: 1.6;
+}
+
+.footer-contact-item a:hover {
+  color: white;
+}
+
+/* Legal */
+.footer-legal {
+  padding-top: var(--space-6);
+  text-align: center;
+}
+
+.footer-legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.footer-legal-links a {
+  font-size: var(--text-xs);
+  color: var(--neutral-500);
+  transition: color var(--transition-fast);
+}
+
+.footer-legal-links a:hover {
+  color: var(--primary-400);
+}
+
+.footer-legal-links .separator {
+  color: var(--neutral-600);
+  margin: 0 var(--space-2);
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--space-6);
+}
+
+.footer-bottom p {
+  font-size: var(--text-sm);
+  color: var(--neutral-500);
+}
+
+.footer-credit {
+  margin-top: var(--space-2);
+  font-size: var(--text-xs) !important;
+}
+
+/* Background */
+.footer-bg-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 102, 204, 0.05) 0%,
+    transparent 100%
+  );
+  pointer-events: none;
+}

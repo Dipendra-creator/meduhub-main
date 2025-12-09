@@ -1,0 +1,33 @@
+# Vercel-Specific Ignores
+.vercel
+.env*.local
+
+# Build Output
+dist/
+.output/
+*.log
+
+# Dependencies
+node_modules/
+client/node_modules/
+
+# Environment Variables (keep templates only)
+.env
+.env.local
+.env.production
+
+# Development
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Docker (not needed on Vercel)
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Local Dev Server
+server.js
