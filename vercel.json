@@ -10,7 +10,7 @@
   "regions": ["bom1"],
   "functions": {
     "api/**/*.js": {
-      "runtime": "nodejs20.x",
+      "runtime": "nodejs20",
       "memory": 1024,
       "maxDuration": 10
     }
